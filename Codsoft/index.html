@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title> McDonalds website landing page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" > <img src ="images/m2.png" class="logo"></a>
+                <ul> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2> It's not just food<br>It's <span>McDonalds~</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quisquam. Quod vel cupiditate eius culpa dolor at explicabo expedita accusantium dolorum, nemo debitis sunt quae esse quibusdam ab reiciendis iusto?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            <div class="imgBox"> 
+                <img src ="images/allc.png" class="McD">
+            </div>
+        </div>
+        <ul class="thumb">
+            
+            <li><img src="images/fries.png" onclick="imgSlider('images/fries2.png');changeCircleColor('##7a1712')"></li>
+            <li><img src="images/roll.png" onclick="imgSlider('images/roll2.png');changeCircleColor('#920603')"></li>
+            <li><img src="images/b3.png" onclick="imgSlider('images/b2.png');changeCircleColor('#a91b0d')"></li>
+            <li><img src="images/allc.png" onclick="imgSlider('images/allc.png');changeCircleColor('#a91b0d')"></li>
+        </ul>  
+        <ul class="sci">
+            <li> <a href="#"><img src="images/facebook.png"></a></li>
+            <li> <a href="#"><img src="images/twitter.png"></a></li>
+            <li> <a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.McD').src = anything;
+            }
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
